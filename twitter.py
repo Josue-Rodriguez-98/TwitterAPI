@@ -72,13 +72,15 @@ def main():
     print(f'{tweet.full_text}')
     print('++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     filteredText = cleanTweet(tweet.full_text)
-    print(f'{filteredText}')
+    #print(f'{filteredText}')
     filteredTweets.append(filteredText)
     count += 1
-  #count = 0
-  #for txt in filteredTweets:
-  #  print(f'{count} -> {txt}\n\n')
-  #  count += 1
+  count = 0
+  for txt in filteredTweets:
+    print(f'##################Tweet #{count}#####################')
+    print(f'{txt}')
+    print('++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+    count += 1
 #---------------------------------------------------------
 
 if '__main__' == __name__:
